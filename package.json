@@ -1,6 +1,6 @@
 {
   "name": "vally-claudecodecli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vally executor plugin that evaluates the Claude Code CLI",
   "keywords": [
     "claude-code",
