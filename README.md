@@ -202,7 +202,6 @@ Each trial's `executor-artifacts` directory contains:
 
 ## Limitations
 
-- **Token metrics are approximate.** The trajectory comes from atifact's Claude Code parser, which currently counts usage once per content block rather than once per model response and reads output tokens before a response finishes. It also drops reasoning, failed-tool status, subagent activity, and timestamps. These are tracked in atifact ([#27](https://github.com/waldekmastykarz/atifact/issues/27)–[#32](https://github.com/waldekmastykarz/atifact/issues/32)) and improve as atifact is updated. Check `claude-code.jsonl` for exact values; the `result` line has Claude Code's totals and cost.
 - **Simulation of non-shell tools is error-only**, and MCP tools can't be given canned successful results.
 - **Machine-dependent configuration.** See [What Claude Code loads](#what-claude-code-loads).
 
